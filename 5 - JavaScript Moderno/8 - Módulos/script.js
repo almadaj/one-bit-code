@@ -1,0 +1,29 @@
+//status add commit push !-->
+export const name = "Juliano";
+
+export function label(attributes) {
+  const element = document.createElement("label");
+  Object.assign(element, attributes);
+  return element;
+}
+
+export function input(attributes) {
+  const element = document.createElement("input");
+  Object.assign(element, attributes);
+  return element;
+}
+
+export function br() {
+  const element = document.createElement("br");
+  return element;
+}
+
+console.log(label({ for: "fullname", textContent: "Nome Completo" }));
+console.log(
+  input({
+    id: "fullname",
+    name: "fullname",
+    placeholder: "Digite seu nome completo...",
+  })
+);
+console.log(br());
