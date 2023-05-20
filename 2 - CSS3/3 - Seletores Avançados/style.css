@@ -1,0 +1,15 @@
+li a {
+  color: red;
+}
+
+li > a {
+  color: purple;
+}
+
+h1 + h2 {
+  color: cornflowerblue;
+}
+a[href="//xx"]
+{
+  color: rgb(0, 183, 255);
+}

@@ -1,0 +1,26 @@
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+}
+.content {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+#page .date {
+  font-family: "Roboto Mono", monospace;
+  color: #008080;
+  font-size: 18px;
+}
+
+#page {
+  background-color: #fffafa;
+  width: 70%;
+  height: 100%;
+  margin: 0px auto 0px auto;
+}
+
+#post {
+  padding: 20px 30px;
+  font-typ
+}

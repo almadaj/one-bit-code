@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hire Us | SpaceX</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="home.html"><img src="spacexlogo.png" alt="spacexlogo" /></a>
+        <a href="spaceships.html">The Spaceship </a>|
+        <a href="hire.html">Hire Us </a>|
+      </nav>
+    </header>
+    <hr />
+    <div>
+      <h1>Hire Us Now</h1>
+      <p>
+        Leave a message to request one of our services and we will get back to
+        you as soon as possible
+      </p>
+      <form action="" autocomplete="on">
+        <label for="name">Name: </label>
+        <input type="text" name="name" required />
+        <label for="email">• Email: </label>
+        <input type="email" name="email" id="email" />
+        <br />
+        <br />
+        <label for="spaceships">Spaceships</label>
+        <select name="spaceships" id="spaceships">
+          <option value="falcon">Falcon 9</option>
+          <option value="falconheavy">Falcon Heavy</option>
+        </select>
+        <label for="service">• Type of Service: </label>
+        <input type="search" name="service" id="service" list="services" />
+        <datalist id="services">
+          <option value="Lorem ipsum"></option>
+          <option value="Dolor sit"></option>
+          <option value="Amet consectetur"></option>
+          <option value="Adipisicing elit"></option>
+        </datalist>
+
+        <br />
+        <br />
+        <input type="button" value="Send" />
+      </form>
+    </div>
+  </body>
+</html>

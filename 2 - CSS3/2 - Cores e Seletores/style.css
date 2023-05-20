@@ -1,0 +1,22 @@
+h1 {
+  color: blueviolet;
+  border: 5px solid purple;
+}
+
+body {
+  background-image: url("https://veja.abril.com.br/wp-content/uploads/2023/04/52822653368_36477f7324_k-e1681734451783.jpg?quality=70&strip=info&w=1280&h=720&crop=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+li {
+  color: deeppink;
+}
+
+.moon {
+  color: black;
+}
+
+#europa-text {
+  font-size: 30px;
+  color: blue;
+}
