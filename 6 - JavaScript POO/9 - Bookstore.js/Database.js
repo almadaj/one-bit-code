@@ -6,8 +6,9 @@ module.exports = class Database {
     orders: [],
     users: [],
   };
+
   find(key) {
-    return this.#storage(key);
+    return this.#storage[key];
   }
 
   saveAuthor(author) {
@@ -19,10 +20,8 @@ module.exports = class Database {
   }
 
   saveBook(book) {
-    const bookExists = this.findBookByName(bookName);
-    if (!bookExists) {
-      this.#storage.books.push(book);
-    }
+    const bookExists = this.findBookByName(book.name);
+    if (!bookExists) [this.#storage.books.push(book)];
   }
 
   addBooksToStock(bookName, quantity) {
@@ -35,16 +34,13 @@ module.exports = class Database {
     book?.removeFromStock(quantity);
   }
 
-  //Poster
   findPosterByName(posterName) {
     return this.#storage.posters.find((p) => p.name === posterName);
   }
 
   savePoster(poster) {
-    const posterExists = this.findPosterByName(posterName);
-    if (!posterExists) {
-      this.#storage.posters.push(poster);
-    }
+    const posterExists = this.findPosterByName(poster.name);
+    if (!posterExists) [this.#storage.posters.push(poster)];
   }
 
   addPostersToStock(posterName, quantity) {
@@ -54,7 +50,7 @@ module.exports = class Database {
 
   removePostersFromStock(posterName, quantity) {
     const poster = this.findPosterByName(posterName);
-    book?.removeFromStock(quantity);
+    poster?.removeFromStock(quantity);
   }
 
   saveUser(user) {
@@ -67,6 +63,7 @@ module.exports = class Database {
   saveOrder(order) {
     this.#storage.orders.push(order);
   }
+
   showStorage() {
     console.table(this.#storage.authors);
     console.table(this.#storage.books);
