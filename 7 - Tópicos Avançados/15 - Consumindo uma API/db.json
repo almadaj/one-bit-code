@@ -24,6 +24,11 @@
       "name": "Freela",
       "amount": 123,
       "id": 6
+    },
+    {
+      "name": "Freela",
+      "amount": null,
+      "id": 7
     }
   ]
 }
