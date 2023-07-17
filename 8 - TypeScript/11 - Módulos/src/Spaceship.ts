@@ -22,22 +22,22 @@ class Spaceship {
   }
 }
 
-class Fighter extends Spaceship {
-  weapons: number;
+// class Fighter extends Spaceship {
+//   weapons: number;
 
-  shoot() {
-    for (let i = 0; i < this.weapons; i++) {
-      console.log("Pew!");
-    }
-  }
+//   shoot() {
+//     for (let i = 0; i < this.weapons; i++) {
+//       console.log("Pew!");
+//     }
+//   }
 
-  erase() {
-    this.name = "";
-    this.captain = "";
-  }
-}
+//   erase() {
+//     this.name = "";
+//     this.captain = "";
+//   }
+// }
 
-let ship = new Fighter("USS Enterprise", "James T. Kirk");
+// let ship = new Fighter("USS Enterprise", "James T. Kirk");
 
-ship.weapons = 20;
-ship.accelerate(50, 10);
+// ship.weapons = 20;
+// ship.accelerate(50, 10);
