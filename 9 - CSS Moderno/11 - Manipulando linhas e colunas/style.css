@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr 1fr 1fr;
   gap: 10px 15px;
-  grid-auto-rows: minmax(310px, auto);
+  grid-auto-rows: minmax(311px, auto);
 }
 
 .item {
