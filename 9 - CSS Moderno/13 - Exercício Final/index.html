@@ -1,10 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Projeto Flexbox&Grid</title>
   </head>
-  <body></body>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img
+          src="./img/logo-onebitcode.svg"
+          alt="logo-header"
+          class="logoNavBar"
+        />
+        <div class="headerBtnGroup">
+          <button class="navBtn">Login</button>
+          <button class="navBtn">Registro</button>
+          <button class="navBtn">FAQ</button>
+        </div>
+      </header>
+      <p class="sectionTitle" id="backToTop">Bem-vindo a OneBitSports</p>
+      <p class="sectionDescription">
+        Aqui você encontra todos as novidades do seu esporte favorito!
+      </p>
+      <section class="gridContainer">
+        <div class="mainContent">
+          <div class="categoryCard">
+            <img src="img/boxe.jpg" alt="boxing" class="mainCardImg" />
+            <p class="mainCategoryCardTitle">BOXE</p>
+            <p class="mainCategoryCardDescription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+              omnis tenetur culpa ratione quod aperiam! Illum eum accusantium
+              nam minus.
+            </p>
+          </div>
+          <div class="categoryCard">
+            <img src="img/crossfit.jpg" alt="crossfit" class="mainCardImg" />
+            <p class="mainCategoryCardTitle">CROSSFIT</p>
+            <p class="mainCategoryCardDescription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+              omnis tenetur culpa ratione quod aperiam! Illum eum accusantium
+              nam minus.
+            </p>
+          </div>
+          <div class="categoryCard">
+            <img src="img/natacao.jpg" alt="swimmingpool" class="mainCardImg" />
+            <p class="mainCategoryCardTitle">NATAÇÃO</p>
+            <p class="mainCategoryCardDescription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+              omnis tenetur culpa ratione quod aperiam! Illum eum accusantium
+              nam minus.
+            </p>
+          </div>
+          <div class="categoryCard">
+            <img src="img/roupas.jpg" alt="clothes" class="mainCardImg" />
+            <p class="mainCategoryCardTitle">ROUPAS</p>
+            <p class="mainCategoryCardDescription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+              omnis tenetur culpa ratione quod aperiam! Illum eum accusantium
+              nam minus.
+            </p>
+          </div>
+          <div class="categoryCard">
+            <img src="img/basquete.jpg" alt="basketball" class="mainCardImg" />
+            <p class="mainCategoryCardTitle">BASQUETE</p>
+            <p class="mainCategoryCardDescription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+              omnis tenetur culpa ratione quod aperiam! Illum eum accusantium
+              nam minus.
+            </p>
+          </div>
+          <div class="categoryCard">
+            <img src="img/corrida.jpg" alt="running" class="mainCardImg" />
+            <p class="mainCategoryCardTitle">CORRIDA</p>
+            <p class="mainCategoryCardDescription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+              omnis tenetur culpa ratione quod aperiam! Illum eum accusantium
+              nam minus.
+            </p>
+          </div>
+          <div class="categoryCard">
+            <img src="img/surf.jpg" alt="surf" class="mainCardImg" />
+            <p class="mainCategoryCardTitle">SURF</p>
+            <p class="mainCategoryCardDescription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+              omnis tenetur culpa ratione quod aperiam! Illum eum accusantium
+              nam minus.
+            </p>
+          </div>
+          <div class="categoryCard">
+            <img src="img/trilha.jpg" alt="trekking" class="mainCardImg" />
+            <p class="mainCategoryCardTitle">TRILHA</p>
+            <p class="mainCategoryCardDescription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+              omnis tenetur culpa ratione quod aperiam! Illum eum accusantium
+              nam minus.
+            </p>
+          </div>
+          <div class="categoryCard">
+            <img src="img/tenis.jpg" alt="tennis" class="mainCardImg" />
+            <p class="mainCategoryCardTitle">TÊNIS</p>
+            <p class="mainCategoryCardDescription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+              omnis tenetur culpa ratione quod aperiam! Illum eum accusantium
+              nam minus.
+            </p>
+          </div>
+        </div>
+        <div class="sidebarContent">
+          <p>CATEGORIAS EXTRAS</p>
+          <div class="sidebarCard">
+            <img src="img/bicicletas.jpg" alt="bike" class="sidebarCardImg" />
+            <p class="sidebarCardTitle">BICICLETA</p>
+          </div>
+          <div class="sidebarCard">
+            <img
+              src="img/esportesNaNeve.jpg"
+              alt="winter sports"
+              class="sidebarCardImg"
+            />
+            <p class="sidebarCardTitle">ESPORTES DE INVERNO</p>
+          </div>
+          <div class="sidebarCard">
+            <img
+              src="img/futebolAmericano.jpg"
+              alt="football"
+              class="sidebarCardImg"
+            />
+            <p class="sidebarCardTitle">FUTEBOL AMERICANO</p>
+          </div>
+          <div class="sidebarCard">
+            <img src="img/skate.jpg" alt="skate" class="sidebarCardImg" />
+            <p class="sidebarCardTitle">SKATE</p>
+          </div>
+          <div class="sidebarCard">
+            <img src="img/yoga.jpg" alt="yoga" class="sidebarCardImg" />
+            <p class="sidebarCardTitle">YOGA</p>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <img
+          src="img/logo-onebitcode.svg"
+          alt="logo-footer"
+          class="logoFooter"
+        />
+        <a href="#backToTop" class="footerAnchor">VOLTAR PARA O TOPO</a>
+      </footer>
+    </div>
+  </body>
 </html>
-m
