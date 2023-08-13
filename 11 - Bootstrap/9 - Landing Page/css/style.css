@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: white;
+}
+
+.container1 {
+  background-color: rgba(19, 18, 18, 0.9450980392);
+  width: 450px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.topLogo {
+  width: 185px;
+}
+
+.paragraph {
+  margin: 8px 0px;
+}
+
+btn-submit {
+  color: #ff0043;
+  border: 1px solid #ff0043;
+}
+btn-submit:hover {
+  background-color: #ff0043;
+  color: white;
+}
+
+.footer {
+  margin-top: 30px;
+  margin-bottom: -30px;
+}
+
+/*# sourceMappingURL=style.css.map */

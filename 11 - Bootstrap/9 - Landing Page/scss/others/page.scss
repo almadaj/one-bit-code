@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: white;
+}
+
+.container1 {
+  background-color: $background-color;
+  width: 450px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.topLogo {
+  width: 185px;
+}
+
+.paragraph {
+  margin: 8px 0px;
+}
+
+btn-submit {
+  color: $button-color;
+  border: 1px solid $button-color;
+  &:hover {
+    background-color: $button-color;
+    color: white;
+  }
+}
+
+.footer {
+  margin-top: 30px;
+  margin-bottom: -30px;
+}
