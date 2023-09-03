@@ -29,6 +29,11 @@
   margin-right: 40px;
 }
 
+#button {
+  padding: $padding-button;
+  border: 2px solid white;
+}
+
 @media (max-width: 405px) {
   .logoPc {
     width: 180px;
