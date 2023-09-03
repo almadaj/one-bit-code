@@ -44,6 +44,14 @@
   }
 }
 
+@media (max-width: 375px) {
+  .downloadDesc {
+    button {
+      margin: 10px 0px;
+    }
+  }
+}
+
 @media (max-width: 350px) {
   .logoPc {
     width: 150px;
