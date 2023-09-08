@@ -34,6 +34,25 @@
   border: 2px solid white;
 }
 
+.downloadDesc {
+  background-color: black;
+  height: 85vh;
+  padding-top: 240px;
+  button {
+    border: 2px solid white;
+    margin-right: 10px;
+  }
+}
+
+.emailObc {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+  &:hover {
+    color: $link-hover;
+  }
+}
+
 @media (max-width: 405px) {
   .logoPc {
     width: 180px;
