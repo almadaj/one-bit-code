@@ -92,3 +92,34 @@
     }
   }
 }
+
+@media (max-width: 610px) {
+  .container01Content {
+    .titleHuman {
+      font-size: 60px;
+    }
+    .subTitleHuman {
+      font-size: 24px;
+    }
+  }
+  .containerRightContent {
+    margin-left: 5%;
+  }
+  .containerLeftContent {
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 380px) {
+  .container01Content {
+    .titleHuman {
+      font-size: 40px;
+    }
+    .subTitleHuman {
+      font-size: 20px;
+    }
+  }
+  img {
+    width: 100px;
+  }
+}
