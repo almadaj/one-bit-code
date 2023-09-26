@@ -21,3 +21,11 @@
   gap: 1rem;
   align-items: center;
 }
+
+.followButton {
+  margin-left: 1rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(224, 220, 220);
+}
