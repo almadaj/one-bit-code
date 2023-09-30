@@ -2,20 +2,22 @@ import styles from "./styles.module.css";
 import Title from "../Title";
 import ProfileSection from "./ProfileSection";
 import LinkButton from "../LinkButton";
+import { useState } from "react";
 
 export default function Profile(props) {
-  function handleClick(ev) {
-    console.log(ev);
-    alert("Você está seguindo!");
-  }
+  const [followText, setFollowText] = useState("Follow");
 
+  function handleClick(ev) {
+    alert("Você está seguindo!");
+    setFollowText("Following");
+  }
   return (
     <div className={styles.container}>
       <img src={props.avatar} alt={props.name} className={styles.avatar} />
       <Title>
         <span>{props.name}</span>
         <button className={styles.followButton} onClick={handleClick}>
-          Follow
+          {followText}
         </button>
       </Title>
       <ProfileSection>{props.bio}</ProfileSection>
