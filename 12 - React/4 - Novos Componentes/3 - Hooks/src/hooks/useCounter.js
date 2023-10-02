@@ -1,9 +1,17 @@
 import { useState } from "react";
+
+function getInitialValue() {
+  console.log("obtendo valor inicial");
+  return 1 + 1;
+}
+
 export default function useCounter() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(() => getInitialValue());
 
   const increment = () => {
-    setCount(count + 1);
+    setCount((previousCount) => previousCount + 1);
+    setCount((previousCount) => previousCount + 1);
   };
+
   return { count, increment };
 }
