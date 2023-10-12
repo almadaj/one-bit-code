@@ -3,14 +3,16 @@ import Input from "./components/inputs";
 
 function App() {
   const [password, setPassword] = useState("");
+  const [customSize, setCustomSize] = useState(12);
+  const [showInput, setShowInput] = useState(false);
   const [copyText, setCopyText] = useState("Copiar");
-  const [passwordSize, setPasswordSize] = useState(12);
+
+  const passwordSize = showInput ? customSize : 8;
 
   function generate() {
     const characters =
       "'1234567890-=!@#$%¨&*()_+qwertyuiop[asdfghjklç~]zxcvbnm,.;/QWERTYUIOP{ASDFGHJKLÇ^}ZXCVBNM<>:?";
     let newPassword = "";
-
     for (let i = 0; i < passwordSize; i++) {
       const position = Math.floor(Math.random() * characters.length);
       newPassword += characters[position];
@@ -21,18 +23,32 @@ function App() {
 
   function copyToClipboard() {
     window.navigator.clipboard.writeText(password);
-    setCopyText("Copiado");
+    setCopyText("Copiado!");
   }
+
   return (
-    <div className="app">
-      <h1>Gerador de Senhas</h1>
+    <div>
+      <h1>Gerador de senhas</h1>
       <div>
-        <label htmlFor="passwordSize">Tamanho: </label>
-        <Input passwordSize={passwordSize} setPasswordSize={setPasswordSize} />
+        <label htmlFor="showInput">Customizar tamanho:</label>
+        <input
+          type="checkbox"
+          id="showInput"
+          value={showInput}
+          onChange={() => setShowInput((show) => !show)}
+        />
       </div>
-      <button onClick={generate}>Gerar</button>
+      {showInput && (
+        <div>
+          <label htmlFor="customSize">Tamanho: </label>
+          <Input passwordSize={customSize} setPasswordSize={setCustomSize} />
+        </div>
+      )}
+      <button onClick={generate}>
+        Gerar senha de {passwordSize} caracteres
+      </button>
       <button onClick={copyToClipboard}>{copyText}</button>
-      <div>{password}</div>
+      <div>Sua senha segura: {password}</div>
     </div>
   );
 }
